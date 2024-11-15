@@ -1,5 +1,5 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/dayfornight" # the subpath of your site, e.g. /blog
+#baseurl: "/dayfornight" # the subpath of your site, e.g. /blog
 title: "Day for Night" # the name of your site, e.g. ACME Corp.
 lang: "en-US"
 
