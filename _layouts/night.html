@@ -6,24 +6,14 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/work">Work</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-          <li></li>
-        </ul>
-        <h1>DfN</h1>
-      </nav>
+  <body class="night">
+    <header class="horizontal-header">
+      <a href="/">
+        {% include dfn-mark.html %}
+      </a>
     </header>
     {{ content }}
+    {% assign title=page.title %}
+    {% include nav.html %}
   </body>
 </html>
