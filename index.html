@@ -1,14 +1,39 @@
 ---
-layout: default
-title: "Seth Mabbott | Selected Work"
+liquid: true
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title></title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Day For Night</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
-    <p>[ Coming Soon ]</p>
-  </body>
-</html>
+  <body class="home night">
+    <div class="title-wrapper">
+      <h1>
+        <span class="reverse-text">D</span>AY <br/>
+        FO<span class="reverse-text">R</span> <br/>
+        <span class="reverse-text">N</span>IGHT <br/>
+      </h1>
+        <hr>
+        <h2>
+          Digital Prototyping
+        </h2>
+        <h2>
+          Physical Computing
+        </h2>
+        <h2>
+          Design
+        </h2>
+       <!-- <h2>
+          🡦
+        </h2> -->
+      </div>
+
+      {% include nav.html %}
+
+    </body>
+  </html>
+

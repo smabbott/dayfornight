@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+  //height:100%;
+}
+body.home{
+  background-color:#000;
+  color:#fff;
+  background-image:url("/assets/img/eclipse_3_edit.jpg");
+  background-size:cover;
+  background-position:50% 30%;
+  //height:100%;
+}
+
+h1{
+  font-weight: 900;
+}
+
+h1, h2 {
+  font-family:"Roboto", sans;
+}
+
+.title-wrapper{
+  display:block;
+  text-align: right;
+  position:absolute;
+  top:3em;
+  right:3em;
+}
+
+.title-wrapper h1{
+  text-transform:uppercase;
+  font-size:3em;
+  margin:0;
+}
+
+.title-wrapper h2{
+  font-weight:300;
+  line-height:1.5em;
+  margin: 0.25em;
+}
+
+.reverse-text{
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  display: inline-block;
+}
+
+
+nav{
+  display:block;
+  text-align:right;
+  position:absolute;
+  bottom:3em;
+  right:3em;
+  a{
+    text-decoration: none;
+    padding: 0 0.5em
+  }
+  margin-right:0.5em;
+}
+
+a{
+  font-family:"IBM Plex Mono", Mono;
+  font-weight:700;
+  color:#fff;
+}
+
+
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.title-wrapper h2.direction{
+  font-weight:900;
+}
+
+/*
+.horizontal-header{
+  nav li{
+    display: inline-block;
+  }
+}
+*/
+
+.dfn-mark{
+  position:absolute;
+  top:3em;
+  right:3em;
+}
+
+.day, .night{
+  padding:3em;
+}
+
+.day{
+  background-color:#fff;
+  color:#000;
+}
+
+.night{
+  background-color:#000;
+  color:#fff;
+  .dfn-mark {
+
+    path{
+      fill:#fff;
+    }
+  }
+  nav{ 
+    a:hover{
+      background-color:#fff;
+    }
+    a.selected{
+      background-color:#fff;
+      color:#000;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// TYPOGRAPHY //
+// default
+body{
+  font-family:"Roboto", sans;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  margin-top: 0;
+}
+
+p{
+ // font-size:1.5em;
+}
+
+
+article{
+  width: 50%;
+  padding-left: 3em;
+  margin: 0 auto;
+  position: relative;
+}
+
+article:before{
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  //background-color: white;
+  //border-radius: 50%;
+  content: " ";
+  left: -3em;
+  top: 0.5em;
+  background-image:url('/assets/img/crecent.svg');
+  background-repeat:no-repeat;
+}

@@ -6,7 +6,14 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
-  <body>
+  <body class="night">
+    <header class="horizontal-header">
+      <a href="/">
+        {% include dfn-mark.html %}
+      </a>
+    </header>
     {{ content }}
+    {% assign title=page.title %}
+    {% include nav.html %}
   </body>
 </html>

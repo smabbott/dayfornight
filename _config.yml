@@ -1,6 +1,9 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Day for Night" # the name of your site, e.g. ACME Corp.
+lang: "en-US"
 
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /work/:name
